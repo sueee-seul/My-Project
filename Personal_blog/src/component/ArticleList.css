@@ -1,0 +1,32 @@
+.ArticleList {
+  padding: 2rem 3rem;
+  background-color: #f9f6f1;
+  color: #2c2c2c;
+  font-family: 'Georgia', serif;
+}
+
+.menu-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.5rem;
+}
+
+.menu-bar select {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  font-family: 'Georgia', serif;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.menu-bar select:hover {
+  border-color: #a67c52;
+}
+
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}

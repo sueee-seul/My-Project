@@ -1,0 +1,44 @@
+.article-item {
+  border: 1px solid #e0dcd5;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  padding: 1rem;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-item:hover {
+  transform: translateY(-5px);
+}
+
+.article-item h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  border-bottom: 1px solid #d8cfc1;
+  padding-bottom: 0.3rem;
+  width: 100%;
+}
+
+.article-item p {
+  font-size: 0.85rem;
+  color: #999;
+  margin-bottom: 0.8rem;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 0.3rem;
+  width: 100%;
+  text-align: center;
+}
+
+.article-image {
+  width: 100%;
+  height: auto; /* 높이 자동 조절 */
+  max-height: 400px; /* 필요하면 최대 높이 제한 */
+  object-fit: contain; /* 이미지가 잘리지 않고 비율 유지 */
+  border-radius: 8px;
+}
+

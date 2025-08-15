@@ -1,0 +1,37 @@
+.custom-button {
+  padding: 0.6rem 1.6rem;
+  font-family: 'Georgia', serif;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  background-color: #a67c52;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  font-size: 0.8rem;
+  box-shadow: 0 4px 8px rgba(166,124,82,0.3);
+  user-select: none;
+}
+
+.custom-button:hover {
+  background-color: #c19a60;
+  box-shadow: 0 6px 12px rgba(193,154,96,0.4);
+}
+
+.custom-button.default {
+  /* 기본 스타일 그대로 */
+}
+
+.custom-button.back {
+  background-color: transparent;
+  color: #a67c52;
+  border: 2px solid #a67c52;
+  box-shadow: none;
+  font-weight: 600;
+}
+
+.custom-button.back:hover {
+  background-color: #a67c52;
+  color: white;
+  border-color: #a67c52;
+  box-shadow: 0 4px 8px rgba(166,124,82,0.3);
+}

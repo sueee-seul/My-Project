@@ -1,12 +1,29 @@
-# React + Vite
+# Emotion Diary
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple TodoList. You can post your schedules and check that.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Main Screen
 
-## Expanding the ESLint configuration
+| Main |
+|------------|
+| <img src="./images/1.Main.JPG" alt="main" width="200"/> |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Check & Delete
+
+| Check_to_do | Delete |
+|-------------------|------------------|
+| <img src="./images/2.Check_to_do.JPG" alt="check_to_do" width="300"/> | <img src="./images/3.Delete.JPG" alt="delete" width="300"/> |
+
+---
+
+## Add To Do
+
+| Add_to_do_text | Add_to_do |
+|---------------------|----------------------|
+| <img src="./images/5.Add_to_do_text.JPG" alt="add_to_do_text" width="300"/> | <img src="./images/4.Add_to_do.JPG" alt="add_to_do" width="300"/> |
+
+

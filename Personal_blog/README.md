@@ -1,12 +1,21 @@
-# React + Vite
+# Personal Blog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal blog.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Main & Content
 
-## Expanding the ESLint configuration
+| Main | Content |
+|-------------------|------------------|
+| <img src="./images/1.Main_page.JPG" alt="check_to_do" width="300"/> | <img src="./images/4,Content.JPG" alt="delete" width="300"/> |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Oldest & Latest
+
+| Content_Oldest | Content_Latest |
+|---------------------|----------------------|
+| <img src="./images/2.Contents_oldest.JPG" alt="add_to_do_text" width="300"/> | <img src="./images/3.Contents_latest.JPG" alt="add_to_do" width="300"/> |
+
+

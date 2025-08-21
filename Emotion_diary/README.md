@@ -18,7 +18,7 @@ This is a simple diary. You can post your diary. When you create a diary, you ca
 
 ## Create Diary  
 
-<div style="display: flex; gap: 16px; flex-wrap: wrap;">
+<div style="display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;">
   <div style="text-align: center;">
     <img src="./images/2.Select_date.JPG" alt="select_date" width="300"/>
     <p>Select Date</p>
@@ -64,7 +64,7 @@ This is a simple diary. You can post your diary. When you create a diary, you ca
 
 ## Edit Diary
 
-<div style="display: flex; gap: 16px; flex-wrap: wrap;">
+<div style="display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;">
 
   <div style="text-align: center;">
     <img src="./images/7.Edit.JPG" alt="posting_diary" width="300"/>
@@ -88,7 +88,7 @@ This is a simple diary. You can post your diary. When you create a diary, you ca
 
 ## Delete Diary
 
-<div style="display: flex; gap: 16px; flex-wrap: wrap;">
+<div style="display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;">
 
   <div style="text-align: center;">
     <img src="./images/11.Delete1.JPG" alt="posting_diary" width="300"/>
@@ -109,7 +109,7 @@ This is a simple diary. You can post your diary. When you create a diary, you ca
 
 ## Other Functions
 
-<div style="display: flex; gap: 16px; flex-wrap: wrap;">
+<div style="display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;">
 
   <div style="text-align: center;">
     <img src="./images/Oldest.JPG" alt="posting_diary" width="300"/>

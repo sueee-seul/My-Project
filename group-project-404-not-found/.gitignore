@@ -1,0 +1,19 @@
+# Please edit this gitignore file to suit your needs. You may
+# look at other .gitignore files in the provided examples for inspiration.
+
+.DS_Store
+node_modules
+
+# Environment variables - Edit if necessary
+.env
+.env.*
+!.env.example
+!.env.test
+
+# User-uploaded files (stored locally, should NOT be committed)
+backend/public/uploads/avatars/*
+backend/public/uploads/materials/*
+backend/public/uploads/marketplace/*
+!backend/public/uploads/avatars/.gitkeep
+!backend/public/uploads/materials/.gitkeep
+!backend/public/uploads/marketplace/.gitkeep

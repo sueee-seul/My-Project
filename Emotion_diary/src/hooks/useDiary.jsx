@@ -1,5 +1,5 @@
 import { useContext, useState,useEffect } from "react";
-import { DiaryStateContext } from "../App";
+import { DiaryStateContext } from "../contexts";
 import { useNavigate } from "react-router-dom";
 
 const useDiary = (id)=>{
@@ -18,7 +18,7 @@ const useDiary = (id)=>{
 
         setCurDiaryItem(curruentDiaryItem);
 
-    },[id, data]);
+    },[id, data, nav]);
     
     return curDiaryItem;
 }

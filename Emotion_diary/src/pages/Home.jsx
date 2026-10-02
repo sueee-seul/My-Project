@@ -2,7 +2,7 @@ import Header from "../components/Header";
 import Button from "../components/Botton";
 import DiaryList from "../components/DiaryList";
 import { useState, useContext } from "react";
-import { DiaryStateContext } from "../App";
+import { DiaryStateContext } from "../contexts";
 import usePageTitle from "../hooks/usePageTitle";
 
 const getMonthlyData = (pivotDate, data) =>{

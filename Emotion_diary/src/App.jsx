@@ -1,13 +1,13 @@
 
 import './App.css'
-import { useReducer, useRef, createContext, useEffect, useState } from 'react';
+import { useReducer, useRef, useEffect, useState } from 'react';
 import {Routes, Route} from "react-router-dom";
 import Diary from './pages/Diary';
 import Home from './pages/Home.jsx';
 import New from './pages/New.jsx';
 import NotFound from './pages/NotFound.jsx';
 import Edit from './pages/Edit.jsx';
-
+import { DiaryStateContext, DiaryDispatchContext } from "./contexts";
 
 
 function reducer(state, action){
@@ -37,8 +37,6 @@ function reducer(state, action){
   return nextState;
 }
 
-export const DiaryStateContext = createContext();
-export const DiaryDispatchContext = createContext();
 function App() {
   const [isLoading, setLoading] = useState(true);
   const [data, dispatch] = useReducer(reducer,[])

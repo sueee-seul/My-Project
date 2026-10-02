@@ -1,3 +1,4 @@
+// CI test
 export const getStringedData = (targetDate) =>{
     let year = targetDate.getFullYear();
     let month = targetDate.getMonth()+1;

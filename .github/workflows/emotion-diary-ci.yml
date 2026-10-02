@@ -2,14 +2,14 @@ name: CI - Emotion Diary
 
 on:
   push:
-  branches: [main]
-  paths:
-    - "Emotion_diary/**""
-    -".github/workflows/emotion-diary-ci.yml"
+    branches: [main]
+    paths:
+      - "Emotion_diary/**"
+      - ".github/workflows/emotion-diary-ci.yml"
   pull_request:
     paths:
       - "Emotion_diary/**"
-      -".github/workflows/emotion-diary-ci.yml"
+      - ".github/workflows/emotion-diary-ci.yml"
 
 jobs:
   ci:
@@ -23,7 +23,7 @@ jobs:
         working-directory: Emotion_diary
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: "npm"

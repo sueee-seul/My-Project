@@ -503,11 +503,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/dew/Desktop/2026/Semester1/COMPSCI732/Assignment/[.NET_C#_Ver]Emotion_diary/backend/backend.csproj",
+      "projectUniqueName": "/Users/dew/Desktop/2026/CICD/My-Project/[.NET_C#_Ver]Emotion_diary/backend/backend.csproj",
       "projectName": "backend",
-      "projectPath": "/Users/dew/Desktop/2026/Semester1/COMPSCI732/Assignment/[.NET_C#_Ver]Emotion_diary/backend/backend.csproj",
+      "projectPath": "/Users/dew/Desktop/2026/CICD/My-Project/[.NET_C#_Ver]Emotion_diary/backend/backend.csproj",
       "packagesPath": "/Users/dew/.nuget/packages/",
-      "outputPath": "/Users/dew/Desktop/2026/Semester1/COMPSCI732/Assignment/[.NET_C#_Ver]Emotion_diary/backend/obj/",
+      "outputPath": "/Users/dew/Desktop/2026/CICD/My-Project/[.NET_C#_Ver]Emotion_diary/backend/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/dew/.nuget/NuGet/NuGet.Config"

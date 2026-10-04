@@ -1,0 +1,41 @@
+name: Node CI (reusable)
+
+on: 
+  workflow_call:
+    inputs:
+      working-directory:
+        required: true
+        type: string
+      lint:
+        type: boolean
+        default: true
+      test:
+        type: boolean
+        default: true
+
+jobs:
+  node-ci:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ inputs.working-directory }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: "npm"
+          cache-dependency-path: ${{ inputs.working-directory }}/package-lock.json
+
+      - name: Install
+        run: npm ci
+      - name: Audit dependencies
+        run: npm audit --audit-level=high
+      - name: Lint
+        if: ${{ inputs.lint }}
+        run: npm run lint
+      - name: Test
+        if: ${{ inputs.test }}
+        run: npm run test
+      - name: Build
+        run: npm run build

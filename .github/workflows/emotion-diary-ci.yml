@@ -6,35 +6,15 @@ on:
     paths:
       - "Emotion_diary/**"
       - ".github/workflows/emotion-diary-ci.yml"
+      - ".github/workflows/node-ci.yml"
   pull_request:
-
- 
-
+  
 jobs:
   ci:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: Emotion_diary
-    steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-node@v7
-        with:
-          node-version: 22
-          cache: "npm"
-          cache-dependency-path: Emotion_diary/package-lock.json
-
-      - name: Install
-        run: npm ci
-      - name: Audit dependencies
-        run: npm audit --audit-level=high
-      - name: Lint
-        run: npm run lint
-      - name: Test
-        run: npm run test
-      - name: Build
-        run: npm run build
-
+    uses: ./.github/workflows/node-ci.yml
+    with:
+      working-directory: Emotion_diary
+  
   deploy-production:
       needs: ci
       if: github.event_name == 'push' && github.ref == 'refs/heads/main'

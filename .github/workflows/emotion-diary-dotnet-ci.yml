@@ -6,10 +6,12 @@ on:
     paths:
       - "Emotion_dairy_dotnet/**"
       - ".github/workflows/emotion-diary-donet-ci.yml"
+      - ".github/workflows/node-ci.yml"
   pull_request:
     paths: 
       - "Emotion_dary_dotnet/**"
       - ".github/workfolows/emotion-diary-dotnet-ci.yml"
+      - ".github/workflows/node-ci.yml"
 
 jobs:
   backend:
@@ -29,22 +31,9 @@ jobs:
         run: dotnet build --no-restore
 
   frontend:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: Emotion_diary_dotnet/frontend
-    steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-node@v7
-        with:
-          node-version: 22
-          cache: "npm"
-          cache-dependency-path: Emotion_diary_dotnet/frontend/package-lock.json
-
-      - name: Install
-        run: npm ci
-      - name: Audit dependencies
-        run: npm audit --audit-level=high
-      - name: Build
-        run: npm run build
+    uses: ./.github/workflows/node-ci.yml
+    with:
+      working-directory: Emotion_diary_dotnet/frontend
+      lint: false
+      test: false
       

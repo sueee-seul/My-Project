@@ -1,3 +1,5 @@
 Semester1_groupProject
 .vercel
 .env*
+bin/
+obj/

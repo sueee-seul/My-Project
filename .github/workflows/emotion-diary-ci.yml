@@ -7,9 +7,8 @@ on:
       - "Emotion_diary/**"
       - ".github/workflows/emotion-diary-ci.yml"
   pull_request:
-    paths:
-      - "Emotion_diary/**"
-      - ".github/workflows/emotion-diary-ci.yml"
+
+ 
 
 jobs:
   ci:

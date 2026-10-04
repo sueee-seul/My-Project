@@ -1,0 +1,50 @@
+name : CI - Emotion Dary (.NET)
+
+on: 
+  push:
+    branches: [main]
+    paths:
+      - "Emotion_dairy_dotnet/**"
+      - ".github/workflows/emotion-diary-donet-ci.yml"
+  pull_request:
+    paths: 
+      - "Emotion_dary_dotnet/**"
+      - ".github/workfolows/emotion-diary-dotnet-ci.yml"
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Emotion_diary_dotnet/backend
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Restore
+        run: dotnet restore
+      - name: Build
+        run: dotnet build --no-restore
+
+  frontend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Emotion_diary_dotnet/frontend
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: "npm"
+          cache-dependency-path: Emotion_diary_dotnet/frontend/package-lock.json
+
+      - name: Install
+        run: npm ci
+      - name: Audit dependencies
+        run: npm audit --audit-level=high
+      - name: Build
+        run: npm run build
+      
